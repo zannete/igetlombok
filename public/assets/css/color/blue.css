@@ -98,7 +98,7 @@
 .main-footer-sub button:hover,
 .main-footer-sub .social-media li a:hover,
 .offer-box a:hover {
-	background: #F9BF3B !important;
+	background: #279944 !important;
 }
 .pricing-info a:hover,
 .td-product .overlay a:hover,
@@ -110,7 +110,7 @@
 	color: #6CC9F4;
 }
 .home-product h5 {
-	color: #F9BF3B;
+	color: #279944;
 }
 .tran-search-box .nav-tabs {
 	border-bottom: 4px solid #6CC9F4;
@@ -128,7 +128,7 @@
 }
 .header-top .navbar-contact a:hover,
 .room-grid-view .room-info .room-title p {
-	color: #F9BF3B !important;
+	color: #279944 !important;
 }
 .header-top .navbar-contact a i {
 	color: #fff !important;
@@ -146,7 +146,7 @@
 	background: #6CC9F4;
 }
 .modify-search .modify-search-button:hover {
-	background: #F9BF3B;
+	background: #279944;
 	color: #fff;
 }
 .price-filter .ui-slider-horizontal {
@@ -164,7 +164,7 @@
 	color: #172732;
 }
 .filter-area h5 {
-	color: #F9BF3B;
+	color: #279944;
 }
 .filter-head h4::after {
 	background: #6CC9F4;
@@ -187,7 +187,7 @@
 }
 .hotel-list-view:hover .room-book-box,
 .hotel-list-view:hover .room-book-box a {
-	background: #F9BF3B;
+	background: #279944;
 }
 .hotel-list-view .hotel-header p,
 .hotel-list-view .hotel-header p i {
@@ -197,7 +197,7 @@
 				404.html CSS STARTS 
 **********************************************************************/
 .not-found {
-	background: #F9BF3B;
+	background: #279944;
 }
 .not-found .desc a:hover, 
 .full-screen-404 a:hover {
@@ -218,7 +218,7 @@
 }
 .post-footer .read-more a:hover,
 .blog-load-more:hover {
-	background: #F9BF3B;
+	background: #279944;
 }
 .post-body p i {
 	color: #6CC9F4;
@@ -235,14 +235,14 @@
 	color: #fff;
 }
 .sidebar-subscribe button:hover {
-	background: #F9BF3B;
+	background: #279944;
 }
 /**********************************************************************
 				car.html CSS STARTS 
 **********************************************************************/
 .col-grid h5,
 .hot-deal-list .item .location {
-	color: #F9BF3B;
+	color: #279944;
 }
 .col-grid .bottom a,
 .tour-grid .tour-detail a:hover,
@@ -256,7 +256,7 @@
 .col-grid .bottom a:hover,
 .hot-deals .nav-tabs > li > a,
 .hot-deal-list .item a:hover {
-	background: #F9BF3B;
+	background: #279944;
 }
 /**********************************************************************
 				car-detailed.html & car-detailed-2.html CSS STARTS 
@@ -280,7 +280,7 @@
 .load-more a:hover,
 .submit-review:hover,
 .product-brief-info .price-detail  {
-	background: #F9BF3B;
+	background: #279944;
 }
 .reserve-car a:hover,
 .product-brief-info .price-detail a:hover {
@@ -327,10 +327,10 @@
 	color: #6CC9F4;
 }
 .tour-gallery p i {
-	color: #F9BF3B;
+	color: #279944;
 }
 .subscribe-box button:hover {
-	background: #F9BF3B;
+	background: #279944;
 }
 .sm-footer {
 	color: #fff;
@@ -344,14 +344,14 @@
 	color: #fff;
 }
 .sm-footer .social-media i:hover {
-	background: #F9BF3B;
+	background: #279944;
 }
 
 /**********************************************************************
 				car-list.html CSS STARTS 
 **********************************************************************/
 .car-detail i {
-	color: #F9BF3B;
+	color: #279944;
 }
 
 /**********************************************************************
@@ -382,26 +382,26 @@
 }
 .package-summary-footer .book a:hover {
 	border: 2px solid transparent;
-	background: #F9BF3B;
+	background: #279944;
 }
 .ammenties-4 i {
 	border: 1px solid #6CC9F4;
 }
 #cabin .inclusion-body h5 a:hover {
-	background: #F9BF3B;
+	background: #279944;
 }
 
 /**********************************************************************
 				cruise-list.html CSS STARTS 
 **********************************************************************/
 .cruise-list-view strong {
-	color: #F9BF3B;
+	color: #279944;
 }
 .cruise-list-view .price {
 	background: #6CC9F4;
 }
 .cruise-list-view:hover .price {
-	background: #F9BF3B;
+	background: #279944;
 }
 
 /**********************************************************************
@@ -416,7 +416,7 @@
 .booking-tab .nav-tabs .active:after {
 	background: #6CC9F4;
 }
-.flight-list-footer .pull-right a,
+.flight-list-footer .pull-right button,
 .booking-form button,
 .passenger-detail-body button,
 .paypal-pay a {
@@ -426,7 +426,7 @@
 .paypal-pay a:hover,
 .booking-form button:hover,
 .passenger-detail-body button:hover {
-	background: #F9BF3B; 
+	background: #279944; 
 }
 /**********************************************************************
 				flight-list.html & flight-list-2.html CSS STARTS 
@@ -442,11 +442,11 @@
 	color: #6CC9F4;
 }
 .flight-list-view:hover .book a,
-.flight-list-v2:hover .flight-list-footer .pull-right a,
+.flight-list-v2:hover .flight-list-footer .pull-right button,
 .booking-summary-v2 a:hover,
 .login-form button:hover, 
 .sign-up-form button:hover {
-	background: #F9BF3B !important;
+	background: #279944 !important;
 }
 .image-set .link a,
 .booking-summary-v2 a {
@@ -488,7 +488,7 @@
 				hotel-detailed.html CSS STARTS 
 **********************************************************************/
 .room-complete-detail .room-info-wrapper h5 {
-	color: #F9BF3B;
+	color: #279944;
 }
 .room-complete-detail .room-info-wrapper .book a {
 	border: 2px solid #6CC9F4;
@@ -542,7 +542,7 @@
 .user-preference button, 
 .user-add-card button, 
 .submit-complaint button  {
-	background: #F9BF3B;
+	background: #279944;
 }
 .item-footer a {
 	color: #6CC9F4;

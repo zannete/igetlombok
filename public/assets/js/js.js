@@ -210,21 +210,13 @@ $(function() {
 		$( "#car_start" ).datepicker({ minDate: -0, maxDate: "+3M" });
 		$( "#car_end" ).datepicker({ minDate: -0, maxDate: "+3M" });
 		$( "#cruise_start" ).datepicker({ minDate: -0, maxDate: "+3M" });
-		$( "#adult_count" ).spinner({
-			min: 1
-		});
-		$( "#child_count" ).spinner( {
-			min: 1
-		});
-		$( "#hotel_adult_count" ).spinner( {
-			min: 1
-		});
-		$( "#hotel_child_count" ).spinner( {
-			min: 1
-		});
-		$('.selectpicker').selectpicker({
-			style: 'custom-select-button'
-		});
+		$( "#fastboats_adult_count" ).spinner({min: 0});
+		$( "#fastboats_child_count" ).spinner({min: 0});
+		$( "#fastboats_infant_count").spinner({min: 0});
+		$( "#tours_adult_count").spinner({min: 0});
+		$( "#tours_child_count").spinner({min: 0});
+		$( "#tours_infant_count").spinner({min: 0});
+		$('.selectpicker').selectpicker({style: 'custom-select-button'});
 });
 
 /**********************************************************************
