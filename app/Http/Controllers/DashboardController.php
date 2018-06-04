@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 use App\Complaint;
+use App\TourPackage;
 
 class DashboardController extends Controller{
   public function __construct(){
@@ -29,8 +30,19 @@ class DashboardController extends Controller{
       }
     }
 
+    $allBookings = array();
+    foreach($user->bookings as $booking) {
+      $booking->type = "FastBoat";
+      $allBookings[] = $booking;
+    }
+    foreach($user->tourBookings as $booking){
+      $booking->type = "Tour";
+      $booking->package = TourPackage::find($booking->tour_package_id);
+      $allBookings[] = $booking;
+    }
+
     $data["complaints"] = $complaints;
-    $data["bookings"] = $user->bookings;
+    $data["bookings"] = $allBookings;
     $data["user"] = $user;
     return view("pages.dashboard.index")->with($data);
   }

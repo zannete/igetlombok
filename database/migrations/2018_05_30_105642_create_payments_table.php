@@ -18,7 +18,7 @@ class CreatePaymentsTable extends Migration{
       $table->string("payment_method_id");
       $table->integer("payment_status_id");
       $table->integer("currency_id");
-      $table->string("booking_id");
+      $table->string("booking_id")->nullable();
       $table->timestamps();
     });
   }

@@ -126,7 +126,6 @@ class FastBoatBookingReviewController extends Controller{
         $itemDetails[] = ["name" => "Child Ticket | ". $booking->route->departure->name . " - ". $booking->route->arrival->name, "price" => $infantPrice, "quantity" => $infantCount ];
       }
     }
-    // return $totalPrice . " | " . var_dump($itemDetails);
 
     /* Konfigurasi Midtrans disini */
     // try{

@@ -22,19 +22,7 @@
     <div class="row">
       <div class="container" style="padding-top: 20px">
         <div class="col-md-3 clear-padding">
-          <div class="filter-head text-center">
-            <h4>25 Result Found Matching Your Search.</h4>
-          </div>
-          <div class="filter-area">
-            <div class="airline-filter filter">
-              <h5><i class="fa fa-ship"></i> Fast Boats</h5>
-              <ul>
-                @foreach($availableVessels as $vessel)
-                  <li><input type="checkbox" value={{$vessel->id}}>{{ $vessel->name }}</li>
-                @endforeach
-              </ul>
-            </div>
-          </div>
+          @include("components.searchFilter", ["checkOptions" => $availableVessels, "checkOptionHeader" => "Fast Boat", "checkOptionHeaderIcon" => "fa fa-ship"])
         </div>
         <div class="col-md-9 flight-listing">
           @php $counter = 0 @endphp

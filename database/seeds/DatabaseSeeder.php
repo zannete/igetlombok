@@ -24,7 +24,12 @@ class DatabaseSeeder extends Seeder{
       CurrenciesTableSeeder::class,
       ComplaintTypesTableSeeder::class,
       ComplaintStatusesTableSeeder::class,
-      ToursTableSeeder::class
+      ToursTableSeeder::class,
+      TourPackagesTableSeeder::class,
+      TourItenariesTableSeeder::class,
+      TourIncludesTableSeeder::class,
+      TourExcludesTableSeeder::class,
+      TourWhatToBringTableSeeder::class
     ]);
   }
 }

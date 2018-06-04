@@ -34,6 +34,14 @@ Route::get("/fastBoatBooking/payment/unfinish", "FastBoatBookingPayment@unfinish
 Route::get("/fastBoatBooking/payment/error", "FastBoatBookingPayment@error");
 
 Route::get("/tourSearch", "TourSearchController@index");
+Route::post("/tourSearch", "TourSearchController@store");
+Route::get("/tourDetail", "TourDetailController@index");
+Route::post("/tourDetail", "TourDetailController@store");
+Route::get("/tourBooking/payment/finish", "TourBookingPaymentController@finish");
+Route::get("/tourBooking/inputTravellers", "TourInputTravellersController@index");
+Route::post("/tourBooking/inputTravellers", "TourInputTravellersController@store");
+Route::get("/tourBooking/review", "TourBookingReviewController@index");
+Route::post("/tourBooking/review", "TourBookingReviewController@store");
 
 Route::get("/logout", "AuthenticationController@logout");
 Route::get("/login", ["as" => "login", "uses" => "AuthenticationController@index"]);

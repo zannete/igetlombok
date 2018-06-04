@@ -17,18 +17,33 @@
   <div class="most-recent-booking">
     <h4>Recent Booking</h4>
     @foreach($bookings as $booking)
-      <div class="field-entry">
-        <div class="col-md-6 col-sm-4 col-xs-4 clear-padding">
-          <p><i class="fa fa-plane"></i>{{ $booking->route->departure->name }}<i class="fa fa-long-arrow-right"></i>{{ $booking->route->arrival->name }}</p>
+      @if($booking->type == "FastBoat")
+        <div class="field-entry">
+          <div class="col-md-6 col-sm-4 col-xs-4 clear-padding">
+            <p><i class="fa fa-plane"></i>{{ $booking->route->departure->name }}<i class="fa fa-long-arrow-right"></i>{{ $booking->route->arrival->name }}</p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            @php $status = join("", array_slice(explode(" ", $booking->payment->paymentStatus->name), 0, 1)); @endphp
+            <p class="{{ strtolower($status) }}"><i class="fa fa-check"></i>{{ $status }}</p>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-2 text-center clear-padding">
+            <a href="#">Detail</a>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-6">
-          @php $status = join("", array_slice(explode(" ", $booking->payment->paymentStatus->name), 0, 1)); @endphp
-          <p class="{{ strtolower($status) }}"><i class="fa fa-check"></i>{{ $status }}</p>
+      @elseif($booking->type == "Tour")
+        <div class="field-entry">
+          <div class="col-md-6 col-sm-4 col-xs-4 clear-padding">
+            <p><i class="fa fa-suitcase"></i>{{ $booking->package->name }}</p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            @php $status = join("", array_slice(explode(" ", $booking->payment->paymentStatus->name), 0, 1)); @endphp
+            <p class="{{ strtolower($status) }}"><i class="fa fa-check"></i>{{ $status }}</p>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-2 text-center clear-padding">
+            <a href="#">Detail</a>
+          </div>
         </div>
-        <div class="col-md-2 col-sm-2 col-xs-2 text-center clear-padding">
-          <a href="#">Detail</a>
-        </div>
-      </div>
+      @endif
       <div class="clearfix"></div>
     @endforeach
   </div>
@@ -46,9 +61,12 @@
           $diffString = str_replace(" weeks", "w", $diffString);
           $diffString = str_replace(" days", "d", $diffString);
         @endphp
-        <div class="notification-entry">
-          <p><i class="fa fa-ship"></i> {{ $booking->route->departure->name }} to {{ $booking->route->arrival->name }} Booked <span class="pull-right">{{ $diffString }}</span></p>
-        </div>
+        @if($booking->type == "FastBoat")
+          <div class="notification-entry">
+            <p><i class="fa fa-ship"></i> {{ $booking->route->departure->name }} to {{ $booking->route->arrival->name }} Booked <span class="pull-right">{{ $diffString }}</span></p>
+          </div>
+        @elseif($booking->type == "Tour")
+        @endif
       @endforeach
     </div>
   </div>

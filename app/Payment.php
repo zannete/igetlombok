@@ -14,6 +14,10 @@ class Payment extends Model{
   }
 
   public function booking(){
-    return $this->belongsTo("App\Payment");
+    return $this->belongsTo("App\Booking");
+  }
+
+  public function tourBooking(){
+    return $this->hasOne("App\Booking");
   }
 }
