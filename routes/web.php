@@ -48,3 +48,4 @@ Route::get("/login", ["as" => "login", "uses" => "AuthenticationController@index
 Route::post("/login", "AuthenticationController@login");
 Route::post("/register", "AuthenticationController@register");
 
+Route::get("/posts/{id}", "PostController@index");

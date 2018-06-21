@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Place;
 use App\GroupOfPlace;
 use App\Tour;
+use App\Post;
 
 class PagesController extends Controller{
   public function index(Request $request){
@@ -37,6 +38,7 @@ class PagesController extends Controller{
     $request->session()->flush();
 
     $data["tours"] = Tour::all();
+    $data["posts"] = Post::orderBy("updated_at", "desc")->limit(10)->get();
     return view("pages.home")->with($data);
   }
 }

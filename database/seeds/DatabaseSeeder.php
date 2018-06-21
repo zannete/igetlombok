@@ -29,7 +29,10 @@ class DatabaseSeeder extends Seeder{
       TourItenariesTableSeeder::class,
       TourIncludesTableSeeder::class,
       TourExcludesTableSeeder::class,
-      TourWhatToBringTableSeeder::class
+      TourWhatToBringTableSeeder::class,
+      AdminsTableSeeder::class,
+      PostCategoriesTableSeeder::class,
+      PostsTableSeeder::class
     ]);
   }
 }

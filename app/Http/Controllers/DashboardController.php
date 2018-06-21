@@ -41,6 +41,9 @@ class DashboardController extends Controller{
       $allBookings[] = $booking;
     }
 
+    usort($allBookings, function($a, $b){
+      return date_create($a->updated_at) < date_create($b->created_at);
+    });
     $data["complaints"] = $complaints;
     $data["bookings"] = $allBookings;
     $data["user"] = $user;

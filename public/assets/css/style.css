@@ -7535,3 +7535,11 @@ select.form-control {
 .booking-sidebar .sidebar-item:not(:first-child){
 	margin-top: 20px;
 }
+
+.label-pending {
+	background-color: #8A6D3B;
+}
+
+.label-failed {
+	background-color: #8A6D3B;
+}
